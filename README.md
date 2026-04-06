@@ -99,14 +99,14 @@ Open the Monitor tab to view the Heap graph.
 Press ENTER in your terminal to start the scrolling simulation.
 
 📂 Project Structure
-Main.java: The simulation loop and execution entry point.
+1)Main.java: The simulation loop and execution entry point.
 
-DatabaseConnectionManager.java: HikariCP configuration and initialization.
+2)DatabaseConnectionManager.java: HikariCP configuration and initialization.
 
-BibEntry.java: The primary Data Transfer Object (DTO).
+3)BibEntry.java: The primary Data Transfer Object (DTO).
 
-BibEntryRepository.java: The Data Access Object (DAO) interface.
+4)BibEntryRepository.java: The Data Access Object (DAO) interface.
 
-JsonbBibEntryRepository.java: The PostgreSQL implementation handling Keyset Pagination and JSONB parsing.
+5)JsonbBibEntryRepository.java: The PostgreSQL implementation handling Keyset Pagination and JSONB parsing.
 
 Developed by Aritra Banerjee for the JabRef Open Source Community.
