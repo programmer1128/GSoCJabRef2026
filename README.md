@@ -99,6 +99,7 @@ Open the Monitor tab to view the Heap graph.
 Press ENTER in your terminal to start the scrolling simulation.
 
 📂 Project Structure
+
 1)Main.java: The simulation loop and execution entry point.
 
 2)DatabaseConnectionManager.java: HikariCP configuration and initialization.
