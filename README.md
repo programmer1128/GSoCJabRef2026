@@ -48,14 +48,18 @@ Connect to your local PostgreSQL instance and create a database named `jabref`. 
 ```sql
 DROP TABLE IF EXISTS bib_entries;
 
-CREATE TABLE bib_entries (
-    id SERIAL PRIMARY KEY,
-    citation_key VARCHAR(255) UNIQUE NOT NULL,
-    entry_type VARCHAR(50) NOT NULL,
-    author TEXT NOT NULL,
-    title TEXT NOT NULL,
-    publication_year DATE,
-    dynamic_fields JSONB DEFAULT '{}'::jsonb
+create table bib_entries(
+
+	 id serial,
+	 citation_key varchar(255) unique not null,
+	 entry_type varchar(255) not null,
+	 author text not null,
+	 title text not null,
+	 publication_year date not null,
+	 
+	 dynamic_fields jsonb default '{}'::jsonb,
+	 
+	 primary key (id)
 );
 
 CREATE INDEX idx_dynamic_fields ON bib_entries USING GIN (dynamic_fields);
