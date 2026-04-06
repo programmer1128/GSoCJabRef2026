@@ -30,6 +30,9 @@ To prove the architecture, the database was seeded with **50,000 realistic dummy
 
 ![VisualVM Proof 1]<img width="1366" height="768" alt="GSoCJabrefPrototypeTest" src="https://github.com/user-attachments/assets/249163c7-acef-4549-9ba8-9e3e0e7856d1" />
 
+<img width="1366" height="768" alt="GSoCJabrefPrototypeTest" src="https://github.com/user-attachments/assets/e36bbb50-578c-46bb-97ff-eefc36cf0338" />
+
+
 > *Garbage Collector successfully clearing old pages, idling at ~15MB.*
 
 ## 🛠️ How to Reproduce
