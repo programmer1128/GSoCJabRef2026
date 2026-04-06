@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application' 
+}
+
+group = 'org.jabref.poc'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    // jcenter is dead, we must use mavenCentral
+    mavenCentral()
+}
+
+dependencies {
+    // Modern syntax uses 'implementation' instead of 'compile'
+    implementation 'org.postgresql:postgresql:42.7.2'
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+}
+
+application {
+    mainClass = 'org.example.Main' 
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+run {
+    standardInput = System.in
+}
